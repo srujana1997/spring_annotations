@@ -1,7 +1,9 @@
 package com.stackroute;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Actor {
     @Value("${actor.name}")
         private String name;
