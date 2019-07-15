@@ -8,5 +8,8 @@ public class Main {
         ApplicationContext applicationContext=new AnnotationConfigApplicationContext(configuration.class);
         Movie movieA=applicationContext.getBean(Movie.class);
         movieA.movieDisplay();
+        Movie  movieB=applicationContext.getBean(Movie.class);
+        movieB.movieDisplay();
+        System.out.println(movieA == movieB);
     }
 }
