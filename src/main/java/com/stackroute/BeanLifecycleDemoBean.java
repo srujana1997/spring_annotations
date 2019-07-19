@@ -5,6 +5,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
 @Component
+//indication to create bean
 public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean{
 
 
