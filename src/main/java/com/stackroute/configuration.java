@@ -6,9 +6,11 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
+//@Configuration indicates that the class has @Bean definition methods.
 @PropertySource("classpath:values.properties")
 public class configuration {
     @Bean
+    //to declare a bean
     public Actor actor(){
         Actor actor=new Actor();
         return actor;
