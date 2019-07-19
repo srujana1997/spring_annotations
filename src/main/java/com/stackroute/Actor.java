@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
+//indication to create bean for this class
 public class Actor {
+    //Assinging attrinute values from property file using @value
     @Value("${actor.name}")
         private String name;
     @Value("${actor.gender}")
