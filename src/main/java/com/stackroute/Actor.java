@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Actor {
+     //Assinging attrinute values from property file using @value
     @Value("${actor.name}")
         private String name;
     @Value("${actor.gender}")
