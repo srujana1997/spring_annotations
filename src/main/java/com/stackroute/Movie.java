@@ -10,8 +10,10 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 @Component
+//indication to create object for this class
 public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNameAware {
     @Autowired
+    //automatic dependency injection
     public void setActor(Actor actor) {
         this.actor = actor;
     }
@@ -26,7 +28,7 @@ public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNam
         actor.actorDisplay();
     }
 
-
+    //@Override annotation informs the compiler that the element is meant to override
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         System.out.println("BeanFactory"+beanFactory);
