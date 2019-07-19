@@ -10,6 +10,7 @@ public class Actor {
     @Value("${actor.age}")
         private String age;
     public Actor(){}
+    //Actor class constructor for initializing the values
     public Actor(String name, String gender, String age) {
         this.name = name;
         this.gender = gender;
